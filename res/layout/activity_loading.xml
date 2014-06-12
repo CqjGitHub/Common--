@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ProgressBar
+        android:id="@+id/progressbarid"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="188.0dip"
+        android:layout_height="138.0dip"
+        android:layout_centerInParent="true"
+        android:background="#FFFFFF"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/progress_login" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/demo1" />
+
+</RelativeLayout>

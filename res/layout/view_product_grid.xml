@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_x_product"
+        android:layout_width="match_parent"
+        android:layout_height="188dp"
+        android:background="@drawable/allbackground" >
+
+        <com.imcore.common.custom.MyGridView
+            android:id="@+id/gv_product_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="18.0dip"
+            android:numColumns="4"
+            android:verticalSpacing="8.0dip" />
+    </RelativeLayout>
+
+</LinearLayout>

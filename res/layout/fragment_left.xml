@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="160.0dip"
+        android:background="@drawable/productcellbackground" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/imageView1"
+            android:layout_marginLeft="12.0dip"
+            android:layout_toRightOf="@id/imageView1"
+            android:text="@string/user_info_bu"
+            android:textColor="#ffe2e2e2" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/textView1"
+            android:layout_below="@id/textView1"
+            android:layout_marginTop="12.0dip"
+            android:text="@string/user_info_vouchers"
+            android:textColor="#ffe2e2e2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/textView2"
+            android:layout_below="@id/textView2"
+            android:layout_marginTop="12.0dip"
+            android:text="@string/user_info_upgrade"
+            android:textColor="#ffe2e2e2" />
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/textView3"
+            android:layout_toRightOf="@id/textView2"
+            android:text="0.00"
+            android:textColor="#ffe06208" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/money"
+            android:layout_alignBottom="@id/money"
+            android:layout_marginLeft="3.0dip"
+            android:layout_toRightOf="@id/money"
+            android:text="@string/yuan"
+            android:textColor="#ffffffff" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/textView2"
+            android:layout_toRightOf="@id/textView1"
+            android:text="200"
+            android:textColor="#e06208" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dip"
+            android:src="@drawable/head" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="100.0dip"
+            android:layout_height="5.0dip"
+            android:layout_alignLeft="@id/textView3"
+            android:layout_below="@id/textView3"
+            android:layout_marginTop="15.0dip"
+            android:max="100"
+            android:progress="25"
+            android:progressDrawable="@drawable/progressbar" />
+
+        <TextView
+            android:id="@+id/percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/imageView1"
+            android:layout_marginBottom="-3.0dip"
+            android:layout_toRightOf="@id/progressBar1"
+            android:text="25%"
+            android:textColor="#ffffffff" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView4"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_alignRight="@+id/textView6"
+            android:background="@drawable/pen" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/relativelayout"
+        android:background="@drawable/allbackground" >
+
+        <com.imcore.common.custom.MyListView
+            android:id="@+id/lv_data_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/v5_0_1_divider_line_new" />
+    </ScrollView>
+
+</RelativeLayout>

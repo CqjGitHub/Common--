@@ -1,0 +1,32 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 滚动条底部颜色就是还没有走的时候 -->
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="2.0dip" />
+
+            <gradient
+                android:angle="270.0"
+                android:centerColor="@color/white"
+                android:centerY="2.0"
+                android:endColor="@color/white"
+                android:startColor="@color/white" />
+        </shape>
+    </item>
+    <!-- 滚动条已经走的颜色 -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="2.0dip" />
+
+                <gradient
+                    android:angle="270.0"
+                    android:centerColor="@color/demo"
+                    android:centerY="2.0"
+                    android:endColor="@color/demo"
+                    android:startColor="@color/demo" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>
